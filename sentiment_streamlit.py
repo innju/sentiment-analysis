@@ -66,7 +66,7 @@ with tab2:
     if submit2:
         sentiment_model = Model().pretrained_model()
         sentiment_dict = sentiment_model.polarity_scores(text_entered)
-        st.write("Sentence Overall Rated As", end = " ")
+        st.write("Sentence Overall Classified As", end = " ")
     # decide sentiment as positive, negative and neutral
         if sentiment_dict['compound'] >= 0.05 :
             st.write('**Positive**')
